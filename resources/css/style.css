@@ -1,0 +1,33 @@
+/*
+UNIVERSAL STYLES
+*/
+
+html {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*
+HEADER
+*/
+
+.navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-fluid:before, .container-fluid:after {
+    content: normal;
+}
+
+.navbar-nav li:first-of-type a {
+    color: #399bd1;
+}
+
+.nav-item a {
+    padding: 1.1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(150, 150, 150);
+}
