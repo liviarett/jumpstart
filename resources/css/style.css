@@ -7,6 +7,73 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: monoton;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding-bottom: 1.4rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1.4rem;
+}
+
+li {
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.4rem;
+}
+
+.image-container {
+    padding-bottom: 1rem;
+}
+
+.image-container img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.blue {
+    color: #399bd1;
+}
+
+.btn {
+    padding: 1.3rem 0;
+    width: 11.4rem;
+    margin-top: 2.8rem;
+    background-color: #399bd1;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+.btn:active {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn:visited {
+    background-color: #399bd1;
+}
+
 /*
 HEADER
 */
@@ -15,6 +82,7 @@ HEADER
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
 }
 
 .container-fluid:before, .container-fluid:after {
@@ -30,4 +98,88 @@ HEADER
     font-size: 1.1rem;
     font-weight: 500;
     color: rgb(150, 150, 150);
+}
+
+/*
+JUMBOTRON
+*/
+
+.jumbotron {
+    background-image: url(../images/jumbotron-bike.jpg);
+    color: white;
+    text-align: center;
+    padding-bottom: 11.85rem;
+}
+
+.jumbotron h1 {
+    font-size: 7.1rem;
+    padding-top: 11.85rem;
+    text-shadow:  -1px -1px 0 black, 1px -1px 2px black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.jumbotron p {
+    width: 51.3rem;
+    margin: 0 auto;
+    text-shadow:  -1px -1px 0 black, 1px -1px 2px black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+/*
+FEATURED PROJECT
+*/
+.featured-project {
+    padding-bottom: 5.85rem;
+}
+/*
+HAVING TROUBLE
+*/
+
+.having-trouble {
+    background-color: #f3f3f3;
+    padding: 5.2rem 0;
+}
+
+.having-trouble p {
+    width: 42rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.having-trouble div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+MEDIA QUERY
+*/
+@media (max-width: 767px) {
+    .navbar-nav li {
+        padding: 0.5rem;    
+    }
+    
+    .jumbotron {
+        position: relative;
+        top: 6rem;
+        background-position: 40%;
+    }
+    
+    .jumbotron h1 {
+    font-size: 5.7rem;
+    }
+    
+    .jumbotron p, .having-trouble p {
+    width: 85%;   
+    }
+    
+    .featured-project {
+        position: relative;
+        top: 6rem;
+    }
+    
+    .having-trouble {
+        position: relative;
+        top: 6rem;
+    }
 }
